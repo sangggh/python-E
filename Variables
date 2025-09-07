@@ -1,1 +1,68 @@
+s = ['False', 'None', 'True', 'and', 'as', 'assert', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
+
+var = 1 #This is Integer
+account_balance = 1000.0 #This is Float
+client_name = 'John Doe' #This is String
+print(var, account_balance, client_name)
+print(var)
+
+var = var + 1
+print(var)
+
+var = 100
+print(var)
+var = 200 + 300
+print(var)
+
+a = 3.0
+b = 4.0
+c = (a ** 2 + b ** 2) ** 0.5
+print("c =", c) 
+
+#Lab 1
+John = 3
+Mary = 5
+Adam = 6
+print(John, Mary, Adam)
+total_apples = John + Mary + Adam
+print("Total Number Of Apples: ", total_apples)
+
+#Shortcut Operators
+x = 3
+sheep = 1
+x *= 2
+sheep += 1
+print(x, sheep)
+
+#Lab 2
+"""
+7.38 miles is 11.88 kilometers
+12.25 kilometers is 7.61 miles
+mile = 1.61 kilometers
+kilometers = 1 mile
+"""
+kilometers = 12.25
+miles = 7.38
+
+miles_to_kilometers = miles * 1.61
+kilometers_to_miles = kilometers / 1.61
+
+print(miles, "miles is", round(miles_to_kilometers, 2), "kilometers")
+print(kilometers, "kilometers is", round(kilometers_to_miles, 2), "miles")
+
+#Lab 3
+x = 0
+x = float(x)
+y = 3 * x**3 - 2 * x**2 + 3 * x - 1
+print("y =", y)
+
+x = 1
+x = float(x)
+y = 3 * x**3 - 2 * x**2 + 3 * x - 1
+print("y =", y)
+
+x = -1
+x = float(x)
+y = 3 * x**3 - 2 * x**2 + 3 * x - 1
+print("y =", y)
 

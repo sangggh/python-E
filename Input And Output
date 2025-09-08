@@ -1,1 +1,67 @@
+print("What's your Name?")
+name = input()
+print("Hello!", name, "Welcome to Python")
+
+
+#direct inputing instead of creating anew line
+boy = input("What's Your Name?")
+print("Hello!", boy, "Welcome to Pythone Essentails!")
+
+#new line computation
+print("Welcome!")
+i = float(input("Enter a Number: "))
+j = i ** 2.0
+print(i, "sqared value is", j)
+
+#hypotenous
+leg_a = float(input("Input first leg length: "))
+leg_b = float(input("Input second leg length: "))
+hypo = (leg_a ** 2 + leg_b ** 2) ** .5
+print("Hypotenuse length is", hypo)
+
+#hypotenous
+leg_a = float(input("Input first leg length: "))
+leg_b = float(input("Input second leg length: "))
+print("Hypotenuse length is", (leg_a ** 2 + leg_b ** 2) ** .5)
+
+fname = input("What's your first name: ")
+lname = input("What's your last name: ")
+print("Hello! " + fname + " " + lname + " ")
+
+print("+" + 10 * "-" + "+")
+print(("|" + " " * 10 + "|\n") * 5, end="")
+print("+" + 10 * "-" + "+")
+
+#Type conversions once again
+leg_a = float(input("Input first leg length: "))
+leg_b = float(input("Input second leg length: "))
+print("Hypotenuse length is " + str((leg_a**2 + leg_b**2) ** .5))
+
+#Lab 1
+print("Welcome to Calculator!")
+a = float(input("Enter first number: "))
+b = float(input("Enter second number: "))
+print("+:", int(a + b))
+print("-:", int(a - b))
+print("*:", int(a * b))
+print("/:", a / b)
+
+#Lab 2
+"""
+Your task is to prepare a simple code able to evaluate the end time of a period of time, given as a number of minutes (it could be arbitrarily large). The start time is given as a pair of hours (0..23) and minutes (0..59). The result has to be printed to the console.
+For example, if an event starts at 12:17 and lasts 59 minutes, it will end at 13:16.
+"""
+x = float(input("Enter value for x: "))
+y = 1./(x + 1./(x + 1./(x + 1./x)))
+print("y =", y)
+
+#Lab 3
+hour = int(input("Starting time (hours): "))
+minutes = int(input("Starting time (minutes): "))
+dura = int(input("Event duration (minutes): "))
+total = minutes + dura
+a = total / 60
+b = int(a + hour)
+c = total % 60
+print(b,":", c)
 
